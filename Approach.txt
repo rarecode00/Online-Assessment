@@ -1,0 +1,15 @@
+#Intiution
+The intitution here is to traverse for all the blocks and for each block check how farthest we can go to meet our requirements.
+
+#Approach
+
+1. We make an object that contains properties of 'reqs'(initially false);
+2. The function initializes a variable index to store the index of the optimal block, a variable needs to store an object representing the required buildings, a variable farthest to store the farthest distance traveled, and a for loop to initialize the needs object.
+3.The function then initializes variables left and right to the indices of the blocks to the left and right of the current block, and a variable fartherestHere to store the farthest distance traveled for the current block.
+4.The function then has an inner while loop that continues until left is less than 0 and right is greater than the number of blocks.
+5.Inside the inner while loop, the function increments fartherestHere and updates the properties of the curr object based on the properties of the current block.
+The function then checks whether all required properties are present in the curr object. If they are, it updates the index and farthest variables if the current block is a better option.
+6.After the inner while loop, the outer for loop continues to the next block.
+7.Finally, the function returns the index variable, which contains the index of the optimal block.
+
+-----End of explaination----
